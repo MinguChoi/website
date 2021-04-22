@@ -1,0 +1,461 @@
+//* 초기화 */
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em; font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif; background:#f5f5f5;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:17px; font-family:'NanumSquare','Malgun Gothic', dotum, sans-serif}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+ul, dl,dt,dd {margin:0;padding:0;list-style:none}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+label, input, button, select, img {vertical-align:middle;font-size:1em}
+input, button {margin:0;padding:0; font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+input[type="submit"]{cursor:pointer}
+button {cursor:pointer}
+
+textarea, select {font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {color:#000;text-decoration:none}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+/* 헤더 - 로고, 상단메뉴 */
+   .header {
+      border: 1px solid #000;
+      background: #26649e;
+      overflow: hidden
+   }
+
+   .header > div{overflow: hidden; max-width: 1200px; margin: 0 auto;}
+   .header > div > div.logo{}
+   .header > div > div.top-btn{}
+
+   .header .logo {
+      float: left;
+   }
+   .header .logo h1{
+      font-size: 17px;
+   }
+   .header .logo h1 a{
+      display: block;
+      padding: 5px
+   }
+   .header .logo h1 img{
+      width: 100px
+   }
+
+
+   .header .top-btn {
+      float: right;
+   }
+   .header .top-btn ul {
+   	  overflow: hidden;
+	  margin-top: 10px
+	}
+
+   .header .top-btn ul li{
+      float: left;
+      margin-left: 10px
+   }
+   .header .top-btn ul li a{
+      font-size: 14px;
+      padding: 5px;
+      color: #fff
+   }
+   .header .top-btn ul li a:hover{color: #000;}
+
+/* 메뉴 */
+
+   .menu > div{max-width: 1200px; margin: 0 auto;}
+   .menu > div > ul{text-align: center;}
+   .menu > div > ul > li {display: inline-block; position: relative;}
+   .menu > div > ul > li a{display: block; padding: 10px; font-size: 17px; margin: 10px 40px;}
+
+   .menu > div > ul > li a:hover{color: #25a5ff}
+   .menu > div > ul > li:hover ul.submenu{display:block; border: 1px solid #ccc; border-top: none;}
+   .menu > div > ul > li > ul.submenu{position: absolute; z-index: 9; background: #fff; display:none; width:100%;}
+   .menu > div > ul > li > ul.submenu a{margin: 5px; font-size: 14px;}
+
+/* 배너 */
+	.banner .swiper-container{max-width: 1200px; margin: 0 auto; }
+
+/* 메인 메뉴 */
+	.menu{border-bottom: 1px solid #ccc; background: #fff;}
+	.tab-menu ul{overflow: hidden; text-align: center;}
+	.tab-menu ul li{float:left; width: 33.33%}
+	.tab-menu ul li a{display:block; padding: 5px 10px; border-bottom:1px solid #e1e1e1; font-size: 14px; color: #888;}
+	.tab-menu ul li.on a{color:#057bf5; font-weight: bold; border-bottom: 1px solid #057bf5;}
+	.tab-menu ul li:hover a{color:#057bf5}
+
+	.tab-con{}
+	.tab-con ul li{overflow: hidden;}
+	.tab-con ul li:hover{border-bottom: 1px dashed #e1e1e1;}
+	.tab-con ul li a{float: left; display:block; padding:5px; font-size:15px;}
+	.tab-con ul li a:before{content: ""; display: inline-block; width: 3px; height: 3px; background: #ccc; border-radius: 50%; vertical-align: middle; margin-right: 5px;}
+	.tab-con ul li span{float: right; padding:5px; font-size:13px; color:#888}
+
+	.bbs-box > div{overflow: hidden; max-width:1200px; margin: 0 auto;}
+	.bbs-box > div > .board-box{float: left; width: 40%}
+	.bbs-box > div > .board-box > div{padding:10px}
+	.bbs-box > div > .right-banner{float: right; width: 60%;}
+	.bbs-box > div > .right-banner .r-slide{padding: 10px;}
+
+/* 하단 정보 */
+    .footer{background: #444; color: #ccc;}
+	.footer > div{padding: 20px;}
+	.footer h1{font-size: 17px; margin-bottom: 10px}
+	.footer p{font-size: 13px; line-height: 160%;, padding: 0;, margin: 0;}
+	.footer span{font-size: 12px; color: #999;}
+
+/* 로그인 html */
+   .login-box {
+      padding: 40px;
+   }
+   .login-box h1 {
+      text-align: center;
+      margin-bottom: 20px
+   }
+   .login-box .login {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #e1e1e1;
+      border-radius: 25px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+   }
+   .login-box .login li {
+      margin: 5px;
+   }
+   .login-box .login li input {
+      width: 100%;
+      height: 40px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+   }
+   .login-box .login li button {
+      width: 100%;
+      height: 40px;
+      background: #26649e;
+      color: #fff;
+      border: 0;
+      border-radius: 25px;
+	  transition: all 0.5s;
+   }
+   .login-box .login li button:hover{
+	  background:#000;
+   }
+   .login-box .login-btn {
+      text-align: center;
+      margin-top: 20px;
+   }
+
+/* 조인 html */
+  .join-box {padding: 50px;}
+  .join-box .join-form label{display: block;}
+  .join-box h1{text-align: center;}
+  
+  .join-box .join-form {max-width:400px; margin: 0 auto; background: #fff; border: 1px solid #ccc;		border-radius: 25px; padding: 20px; margin-top: 30px;}
+  .join-box .join-form input[type="text"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+  .join-box .join-form input[type="password"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+  .join-box .join-form ul li {margin-bottom: 10px;}
+  .join-box .join-form ul li label{font-size: 12px; color: #000; margin-bottom:3px;}
+  .join-box .join-form ul li.gender span{display: inline-block;}
+  .join-box .join-form ul li.gender span label{display: inline-block;}
+
+  .join-box .join-form select{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+  .join-box .join-form ul li.address span.zipcode input{width:100px;}
+  .join-box .join-form ul li.address span.zipcode button{width:100px; height:40px; background: #888; color: #fff; border: 0;}
+  .join-box .join-form ul li.address span {display:block; margin-bottom:5px;}
+
+  .join-box .join-btn{text-align: center;}
+  .join-box .join-btn a{display: inline-block; background: #26649e; color:#fff; margin:5px; padding: 10px 0px; width:100px; margin-top: 30px; border-radius: 25px; transition: all 0.5s;}
+  .join-box .join-btn a:hover{background: #000;}
+
+/* 공지사항 리스트 html */
+	.contents{max-width:1200px; margin:0 auto;}
+	.notice-wrap{margin-top:10px;}
+	.notice-box{padding: 10px;}
+	.notice-box h1{text-align: center;}
+	.search-box {text-align: right;}
+	.search-box input{width:100px; border: 1px solid #ccc; height: 30px;}
+	.search-box button{background: #fff; border: 1px solid #000; height: 30px; padding:0px 20px;}
+	.notice-table{background: #fff; margin-top: 10px;}
+	.notice-table ul.table-hd{text-align: center; border-top: 2px solid #000;}
+	.notice-table ul.table-bd{text-align: center;}
+	.notice-table ul.table-bd .subject{text-align: left;}
+	.notice-table ul li{display: table; width: 100%;}
+	.notice-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+	.notice-table ul li > div.no{width:10%}
+	.notice-table ul li > div.subject{width:50%}
+	.notice-table ul li > div.subject a{font-size: 14px; font-weight: bold;}
+	.notice-table ul li > div.subject a:hover{text-decoration: underline; color: #26649e;}
+	.notice-table ul li > div.name{width:20%}
+	.notice-table ul li > div.date{width:20%}
+
+	.paging{margin: 20px 0;}
+	.paging ul{text-align: center;}
+	.paging ul li{display: inline-block;}
+	.paging ul li a{display: block; padding: 5px 10px; border: 1px solid #e1e1e1; background: #fff;}
+	.paging ul li.on a{background: #000; color: #fff; border: 1px solid #000;}
+
+	.bbs-btn-box{text-align: right;}
+	.bbs-btn-box a{display: inline block; background: #000; color: #fff; padding: 5px 10px;}
+
+/* 공지사항 글쓰기 html */
+	.notice-box{background: #f5f5f5;}
+	.write-form{max-width:1200px; border: 1px solid #000; padding: 10px; margin: 20px auto; }
+	.write-form ul li{padding: 5px;}
+	.write-form label{display:inline-block; vertical-align: top; text-align: center; width: 25%;}
+	.write-form input[type="text"]{width:70%;}
+	.write-form input[type="file"]{}
+	.write-form input[type="checkbox"]{}
+	.write-form textarea{width:70%; height: 200px;}
+	.write-form li.notice-select label[for="check-notice"]{width: 20%; margin-left: 5px;}
+
+	.bbs-btn-box {max-width: 1200px; margin:15px auto;}
+
+/* 공지사항 보기 html */
+	.view{margin-top: 10px;}
+	.view h2{margin-bottom: 10px;}
+	.view > span{display: inline-block; padding-bottom: 10px;}
+
+	.view .view-con{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 20px; background: #fff; height: 600px;}
+	.view .file-down a{display: block; margin: 5px 5px 5px 0; padding: 5px; background: #e1e1e1;}
+
+	.bbs-btn-box a.del{background: #ff4242;}
+	.bbs-btn-box a.mod{background: #ff4242;}
+
+/* 갤러리 리스트 html */
+	.gallery-table > ul{overflow: hidden;}
+	.gallery-table > ul > li{width:25%; float: left; margin-bottom: 20px;}
+	.gallery-table > ul > li:nth-child(4n+1){clear:both;}
+	.gallery-table > ul > li > div{padding: 10px;}
+	.gallery-table .thum{padding-bottom: 0; height:280px; overflow:hidden;}
+	.gallery-table .info a{display: block; font-size: 15px;}
+	.gellery-table .info span{color: #888;}
+
+ /* 장소예약 리스트 */
+   .booking-table > ul{
+      overflow: hidden;
+   }
+   .booking-table > ul > li {
+      overflow: hidden;
+      margin-bottom: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+   }
+   .booking-table > ul > li > div{
+      padding: 10px;
+      float: left;
+   }
+
+   .booking-table .thum {
+      text-align: center;
+      width: 15%;
+   }
+   .booking-table .thum a {
+      display: block;
+      padding: 5px;
+      background: #fff;
+      border: 1px solid #e1e1e1;
+      max-height: 220px;
+      overflow: hidden;
+   }
+   .booking-table .thum img {
+      max-height: 220px;
+   }
+   .booking-table .info {
+      width: 85%;
+   }
+   .booking-table .info a{
+      display: block; 
+      font-size: 17px;
+   }
+   .booking-table .info p {
+      font-size: 14px;
+      color: #444;
+      margin: 10px 0;
+      max-height: 55px;
+      overflow: hidden;
+   }
+   .booking-table .info span {
+      color: #888;
+   }
+
+ /* 장소예약 보기 html */
+.booking-view {}
+.booking-view > div {  
+  padding: 20px;
+}
+.booking-view .photo-box {
+  overflow: hidden;
+}
+.booking-view .photo-box > div{
+  padding: 20px;
+}
+.booking-view .photo-box .view-photo{
+  float: left;
+  width: 50%;
+  height: 310px;
+}
+.booking-view .photo-box .view-photo .view-banner .swiper-container{margin-top:66px;}
+.booking-view .photo-box .calendar {
+  float: right;
+  width: 50%;
+  height: 310px;
+  background: #fff;
+}
+.calendar .cal-box ul {
+  overflow: hidden;
+  padding: 5px;
+}
+.cal-box ul li {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+}
+.cal-box ul li a{
+  display: block;
+  padding: 5px;
+}
+.cal-box ul li:first-child a span {
+  color: #ff4c4c;
+}
+.cal-box ul li:last-child a span {
+  color: #1499d1;
+}
+.cal-box ul li a span.off {
+  color: #aaa;
+}
+.cal-box ul li a span.today {
+  color: #fff;
+  background: #16d03e;
+  padding: 5px
+}
+.cal-box ul li a span.selected {
+  color: #fff;
+  background: #000;
+  padding: 5px
+}
+.cal-box ul li a span:hover {
+  color: #fff;
+  background: #000;
+  padding: 5px
+}
+.cal-hd{text-align: center;}
+.cal-hd span{margin:10px; display: inline-block; padding: 10px;}
+.cal-hd span.month{font-size:19px; font-weight:bold;}
+
+.view-btn{text-align: right; padding: 5px;}
+.view-btn a{display: inline-block; padding: 5px 10px; background: #000; color: #fff; transition: all 0.3s;}
+.view-btn a:hover{background: #26649e;}
+
+.view-detail{background: #fff; border: 1px solid #ccc; margin: 10px 5px; padding: 20px; min-height:200px;} 
+
+/* 마이페이지 */
+.mypage-list{background: #fff; margin-top: 10px;}
+.mypage-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.mypage-list ul.table-bd{text-align: center;}
+.mypage-list ul.table-bd .location{text-align: left;}
+.mypage-list ul li{display: table; width: 100%;}
+.mypage-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.mypage-list ul li > div.no{width:10%}
+.mypage-list ul li > div.location{width:50%}
+.mypage-list ul li > div.status{width:15%; }
+.mypage-list ul li > div.reservation-date{width:15%;}
+.mypage-list ul li > div.transaction-date{width:15%;}
+
+.mypage-list ul.table-bd .location {text-align: left;}
+
+/* 환경설정 set html */
+.adm-menu{background: #fff; border-bottom: 1px solid #e1e1e1;}
+.adm-menu ul{text-align: center;}
+.adm-menu ul li{display:inline-block; margin: 5px;}
+.adm-menu ul li:before{content:""; display: inline-block; width: 1px; height: 10px; background: #000; margin-right: 15px;}
+.adm-menu ul li:last-child:after{content:""; display: inline-block; width: 1px; height: 10px; background: #000; margin-left: 15px;}
+.adm-menu ul li a{display:inline-block; padding: 5px 10px; background: #fff; color:#000;}
+.adm-menu ul li a:hover{color: #26649e; font-weight: bold;}
+.adm-menu ul li.on a{color: #26649e; font-weight: bold;}
+
+
+.adm-set {padding: 50px;}
+.adm-set .join-form label{display: block;}
+.adm-set h1{text-align: center;}
+
+.adm-set .join-form {max-width:800px; margin: 0 auto; background: #fff; border: 1px solid #ccc;		padding: 20px; margin-top: 30px;}
+.adm-set .join-form input[type="text"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+.adm-set .join-form input[type="password"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+.adm-set .join-form ul li {margin-bottom: 10px;}
+.adm-set .join-form ul li label{font-size: 12px; color: #000; margin-bottom:3px;}
+.adm-set .join-form ul li.gender span{display: inline-block;}
+.adm-set .join-form ul li.gender span label{display: inline-block;}
+
+.adm-set .join-form select{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+.adm-set .join-form ul li.address span.zipcode input{width:100px;}
+.adm-set .join-form ul li.address span.zipcode button{width:100px; height:40px; background: #888; color: #fff; border: 0;}
+.adm-set .join-form ul li.address span {display:block; margin-bottom:5px;}
+
+.adm-set .join-btn{text-align: center;}
+.adm-set .join-btn a{display: inline-block; background: #26649e; color:#fff; margin:5px; padding: 10px 0px; width:100px; margin-top: 30px; border-radius: 25px; transition: all 0.5s;}
+.adm-set .join-btn a:hover{background: #000;}
+
+/* 게시판 관리 board.html */
+.board-list{background: #fff; margin-top: 10px;}
+.board-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.board-list ul.table-bd{text-align: center;}
+.board-list ul li{display: table; width: 100%;}
+.board-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.board-list ul li > div.no{width:10%}
+.board-list ul li > div.board-name{width:50%}
+.board-list ul li > div.board-type{width:15%;}
+.board-list ul li > div.date{width:15%;}
+.board-list ul li > div.setting{width:15%;}
+
+.board-list .board-name a:hover{color: #26649e; text-decoration: underline;}
+.board-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
+.board-list .setting a:hover{background: #000; color: #fff;}
+
+/* 게시판 생성 board_write.html */
+.board-write-form{border: 1px solid #000; background: #fff; max-width:1200px;  padding: 10px; margin: 20px auto; }
+.board-write-form ul{text-align: left; padding: 50px 10px;}
+.board-write-form ul li{padding: 5px;}
+.board-write-form ul li label{display:inline-block; vertical-align: top; width: 150px; margin-left: 250px;}
+.board-write-form input[type="text"]{width: 40%;}
+.board-write-form li.select label[for="check-notice"]{margin-left: 10px;}
+
+/* 회원관리 member.html */
+.member-list{background: #fff; margin-top: 10px;}
+.member-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.member-list ul.table-bd{text-align: center;}
+.member-list ul.table-bd .address{text-align: left;}
+.member-list ul li{display: table; width: 100%;}
+.member-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.member-list ul li > div.no{width:5%}
+.member-list ul li > div.name{width:5%}
+.member-list ul li > div.contact{width:12.5%;}
+.member-list ul li > div.email{width:15%;}
+.member-list ul li > div.bday{width:10%;}
+.member-list ul li > div.address{width:30%;}
+.member-list ul li > div.date{width:10%;}
+.member-list ul li > div.setting{width:12.5%;}
+
+.member-list .name a:hover{color: #26649e; text-decoration: underline;}
+.member-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
+.member-list .setting a:hover{background: #000; color: #fff;}
