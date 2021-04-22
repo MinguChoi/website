@@ -22,15 +22,15 @@
       <div>
          <div class="logo">
             <h1>
-               <a href="./index.html">
+               <a href="../index.html">
                   <img src="https://www.hustar.org/img/logo_w.png">
                </a>
             </h1>
          </div>
          <div class="top-btn">
             <ul>
-               <li><a href=".../member/login.html">로그인</a></li>
-               <li><a href=".../member/join.html">회원가입</a></li>
+               <li><a href="../member/login.html">로그인</a></li>
+               <li><a href="../member/join.html">회원가입</a></li>
             </ul>
          </div>
       </div>
@@ -54,7 +54,7 @@
          </ul>
       </div>
       <div class="login-btn">
-         <a href="#none">회원가입</a>
+         <a href="../member/join.html">회원가입</a>
       </div>
    </div>
 
@@ -64,7 +64,7 @@
       <div>
          <h1>HUSTAR</h1>
          <p>대구 동구 동내로 70</p>
-         <p>대표이사 : 최민구</p>
+         <p>대표이사 : 최 민 구</p>
          <p>이메일 : tnh3113@naver.com</p>
          <p>연락처 : 010-1111-2222</p>
          <span>copyright(c) Light. All rights reserved.</span>

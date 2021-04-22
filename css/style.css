@@ -85,7 +85,8 @@ img {
    .menu > div > ul > li a:hover{color: #25a5ff}
    .menu > div > ul > li:hover ul.submenu{display:block;}
    .menu > div > ul > li > ul.submenu{position: absolute; z-index: 9; background: #fff; display:none; width:100%;}
-   .menu > div > ul > li > ul.submenu a{margin: 5px; font-size: 14px; border-bottom:1px solid #ccc;}
+   .menu > div > ul > li > ul.submenu li{border-bottom:1px solid #ccc;}
+   .menu > div > ul > li > ul.submenu a{margin: 5px; font-size: 14px;}
 
 /* ¹è³Ê */
 	.banner .swiper-container{max-width: 1200px; margin: 0 auto; }

@@ -106,22 +106,21 @@
 
 	<div>
 		<ul>
-			<li><a href = "#none">회사소개</a>
+			<li class="menu-top"><a href = "#none">회사소개</a>
 				<ul class = "submenu">
 					<li><a href="./about/intro.html">회사소개</a></li>
 					<li><a href="./about/location.html">오시는길</a></li>
 				</ul>
 			</li>
-			<li><a href = "#none">게시판</a>
+			<li class="menu-top"><a href = "#none">게시판</a>
 				<ul class = "submenu">
 					<li><a href="./bbs/notice_list.html">공지사항</a></li>
 					<li><a href="./bbs/free_list.html">자유게시판</a></li>
 					<li><a href="./bbs/gallery_list.html">갤러리</a></li>
 				</ul>
 			</li>
-			<li><a href = "./booking/list.html">장소예약</a></li>
-				
-			<li><a href = "./booking/mypage.html">마이페이지</a></li>
+			<li class="menu-bottom"><a href = "./booking/list.html">장소예약</a></li>	
+			<li class="menu-bottom"><a href = "./booking/mypage.html">마이페이지</a></li>
 		</ul>
 	</div>
  </div>
@@ -230,7 +229,9 @@
 		<!-- Initialize Swiper -->
 		<script>
 			var swiper = new Swiper('.r-slide', {
-			  slidesPerView: 0.9,
+			  slidesPerView: 1,
+			  centeredSlides: true,
+			  spaceBetween: 10,
 			  autoHeight: true,
 			  loop: true,
 			  autoplay: {

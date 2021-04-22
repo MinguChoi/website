@@ -1,3 +1,5 @@
+
+
 .header{background: #000; overflow: hidden;}
 
 .header .logo h1 {
@@ -17,6 +19,9 @@
 
 .menu > div > ul > li {
     width: 45%;
+}
+.menu > div > ul > li.menu-top {
+	vertical-align: top;
 }
 .menu > div > ul > li a {
     display: block;
@@ -43,7 +48,7 @@
 }
 .menu {height:0px; transition: all 0.3s;}
 .menu.active{height:auto;}
-.menu.active div > ul > li {}
+.menu.active div > ul > li a{border-bottom:1px solid #ccc;}
 
 .menu > div > ul > li > ul.submenu {
     position: relative;
@@ -52,6 +57,20 @@
     display: none;
     width: 100%;
 }
-.menu > div > ul > li > ul.submenu a {
-    border-bottom:1px solid #ccc;
+.menu > div > ul > li > ul.submenu li {
+	
+}
+.menu > div > ul > li > ul.submenu li a {
+	border-bottom: none;
+	font-size: 12px;
+}
+
+/* bbs-box */
+.bbs-box > div > .board-box {
+    float: none;
+    width: auto;
+}
+.bbs-box > div > .right-banner {
+    float: none;
+    width: auto;
 }
