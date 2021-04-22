@@ -77,21 +77,21 @@ img {
 
 /* 메뉴 */
    .m-menu-bar{display:none;}
-   .menu > div{max-width: 1200px; margin: 0 auto;}
+   .menu > div{display: inline; max-width: 1200px; margin: 0 auto;}
    .menu > div > ul{text-align: center;}
    .menu > div > ul > li {display: inline-block; position: relative;}
    .menu > div > ul > li a{display: block; padding: 10px; font-size: 17px; margin: 10px 40px;}
 
    .menu > div > ul > li a:hover{color: #25a5ff}
-   .menu > div > ul > li:hover ul.submenu{display:block; border: 1px solid #ccc; border-top: none;}
+   .menu > div > ul > li:hover ul.submenu{display:block;}
    .menu > div > ul > li > ul.submenu{position: absolute; z-index: 9; background: #fff; display:none; width:100%;}
-   .menu > div > ul > li > ul.submenu a{margin: 5px; font-size: 14px;}
+   .menu > div > ul > li > ul.submenu a{margin: 5px; font-size: 14px; border-bottom:1px solid #ccc;}
 
 /* 배너 */
 	.banner .swiper-container{max-width: 1200px; margin: 0 auto; }
 
 /* 메인 메뉴 */
-	.menu{height:120px; border-bottom: 1px solid #ccc; background: #fff;}
+	.menu{border-bottom: 1px solid #ccc; background: #fff;}
 	.tab-menu ul{overflow: hidden; text-align: center;}
 	.tab-menu ul li{float:left; width: 33.33%}
 	.tab-menu ul li a{display:block; padding: 5px 10px; border-bottom:1px solid #e1e1e1; font-size: 14px; color: #888;}

@@ -42,4 +42,16 @@
 	transform: rotate(-315deg) translateY(-6px) translateX(-4px);
 }
 .menu {height:0px; transition: all 0.3s;}
-.menu.active{height:120px;}
+.menu.active{height:auto;}
+.menu.active div > ul > li {}
+
+.menu > div > ul > li > ul.submenu {
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    display: none;
+    width: 100%;
+}
+.menu > div > ul > li > ul.submenu a {
+    border-bottom:1px solid #ccc;
+}
