@@ -76,7 +76,7 @@ img {
    .header .top-btn ul li a:hover{color: #000;}
 
 /* 메뉴 */
-
+   .m-menu-bar{display:none;}
    .menu > div{max-width: 1200px; margin: 0 auto;}
    .menu > div > ul{text-align: center;}
    .menu > div > ul > li {display: inline-block; position: relative;}
@@ -92,6 +92,7 @@ img {
 
 /* 메인 메뉴 */
 	.menu{border-bottom: 1px solid #ccc; background: #fff;}
+	.menu div {height:120px;}
 	.tab-menu ul{overflow: hidden; text-align: center;}
 	.tab-menu ul li{float:left; width: 33.33%}
 	.tab-menu ul li a{display:block; padding: 5px 10px; border-bottom:1px solid #e1e1e1; font-size: 14px; color: #888;}
@@ -550,3 +551,9 @@ img {
 .booking-list .name a:hover{color: #26649e; text-decoration: underline;}
 .booking-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
 .booking-list .setting a:hover{background: #000; color: #fff;}
+
+/* 팝업 화면 index.html */
+.popup-box{border: 2px solid #000; position: absolute; z-index:9999; left:50%;}
+.popup-box img{max-width:500px; min-width:500px;}
+.popup-box .pop-btn {text-align:right; background: #fff;}
+.popup-box .pop-btn a{display:inline-block; background: #000; color: #fff; padding: 5px;}

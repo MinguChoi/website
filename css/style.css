@@ -76,7 +76,7 @@ img {
    .header .top-btn ul li a:hover{color: #000;}
 
 /* 메뉴 */
-
+   .m-menu-bar{display:none;}
    .menu > div{max-width: 1200px; margin: 0 auto;}
    .menu > div > ul{text-align: center;}
    .menu > div > ul > li {display: inline-block; position: relative;}
@@ -91,7 +91,7 @@ img {
 	.banner .swiper-container{max-width: 1200px; margin: 0 auto; }
 
 /* 메인 메뉴 */
-	.menu{border-bottom: 1px solid #ccc; background: #fff;}
+	.menu{height:120px; border-bottom: 1px solid #ccc; background: #fff;}
 	.tab-menu ul{overflow: hidden; text-align: center;}
 	.tab-menu ul li{float:left; width: 33.33%}
 	.tab-menu ul li a{display:block; padding: 5px 10px; border-bottom:1px solid #e1e1e1; font-size: 14px; color: #888;}
