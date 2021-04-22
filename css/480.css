@@ -1,3 +1,5 @@
+
+
 .header{background: #000; overflow: hidden;}
 
 .header .logo h1 {
@@ -54,4 +56,14 @@
 }
 .menu > div > ul > li > ul.submenu a {
     border-bottom:1px solid #ccc;
+}
+
+/* bbs-box */
+.bbs-box > div > .board-box {
+    float: none;
+    width: auto;
+}
+.bbs-box > div > .right-banner {
+    float: none;
+    width: auto;
 }

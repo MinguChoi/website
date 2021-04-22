@@ -96,7 +96,7 @@
 	$('.m-menu a').click( 
 		function(){
 			$(this).toggleClass('active');
-			$('.menu div').toggleClass('active');
+			$('.menu').toggleClass('active');
 		}
 	)
 </script>
@@ -230,6 +230,7 @@
 		<!-- Initialize Swiper -->
 		<script>
 			var swiper = new Swiper('.r-slide', {
+			  slidesPerView: 0.9,
 			  autoHeight: true,
 			  loop: true,
 			  autoplay: {

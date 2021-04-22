@@ -46,7 +46,7 @@
 .menu.active div > ul > li {}
 
 .menu > div > ul > li > ul.submenu {
-    position: absolute;
+    position: relative;
     z-index: 9;
     background: #fff;
     display: none;
