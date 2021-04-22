@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>회원 관리</title>
+  <title>팝업 관리</title>
 
   <script scr="../js/jquery-1.12.4.min.js"></script>
   <script scr="../js/jquery-ui.min.js"></script>
@@ -42,8 +42,8 @@
 	<ul>
 		<li><a href="./set.html">환경설정</a></li>
 		<li><a href="./board.html">게시판 관리</a></li>
-		<li class="on"><a href="./member.html">회원 관리</a></li>
-		<li><a href="./popup.html"></a>팝업 관리</li>
+		<li><a href="./member.html">회원 관리</a></li>
+		<li class="on"><a href="./popup.html">팝업 관리</a></li>
 		<li><a href="./banner.html">배너 관리</a></li>
 		<li><a href="./booking.html">장소 관리</a></li>
 	</ul>
@@ -54,22 +54,20 @@
 <div class = "contents">
 <div class = "notice-wrap">
 	<div class = "notice-box">
-		<h1>회원 관리</h1>
+		<h1>팝업 관리</h1>
 
 		<div class = "search-box">
 			<input type="text">
 			<button>검색</button>
 		</div>
 
-		<div class = "member-list">
+		<div class = "popup-list">
 			<ul class = "table-hd">
 				<li>
 					<div class = "no">번호</div>
-					<div class = "name">이름</div>
-					<div class = "contact">연락처</div>
-					<div class = "email">이메일</div>
-					<div class = "bday">생년월일</div>
-					<div class = "address">주소</div>
+					<div class = "popup-name">팝업명</div>
+					<div class = "period">사용기간</div>
+					<div class = "use">사용여부</div>
 					<div class = "date">등록일</div>
 					<div class = "setting">관리</div>
 				</li>
@@ -78,40 +76,34 @@
 			<ul class = "table-bd">
 				<li>
 					<div class = "no">1</div>
-					<div class = "name"><a href="#none">홍길동</a></div>
-					<div class = "contact">010-1234-5678</div>
-					<div class = "email">test1123@naver.com</div>
-					<div class = "bday">96.04.17</div>
-					<div class = "address">대구 수성구 노변공원로34</div>
-					<div class = "date">2021.04.20</div>
+					<div class = "popup-name"><a href="../bbs/notice_list.html">공지사항</a></div>
+					<div class = "period">2021.04.22 ~ 2021.04.30</div>
+					<div class = "use">사용</div>
+					<div class = "date">2021.04.21</div>
 					<div class = "setting">
-						<a href="./member_form.html">수정</a>
-						<a href="#none">삭제</a>
-					</div>
-				</li>
-				<li>
-					<div class = "no">2</div>
-					<div class = "name"><a href="#none">관리자</a></div>
-					<div class = "contact">010-1234-5678</div>
-					<div class = "email">tes23442132t@naver.com</div>
-					<div class = "bday">93.09.15</div>
-					<div class = "address">대구 동구 동내로 70</div>
-					<div class = "date">2021.04.20</div>
-					<div class = "setting">
-						<a href="./member_form.html">수정</a>
+						<a href="./popup_form.html">수정</a>
 						<a href="#none">삭제</a>
 					</div>
 				</li>
 				<li>
 					<div class = "no">1</div>
-					<div class = "name"><a href="#none">홍길동</a></div>
-					<div class = "contact">010-1234-5678</div>
-					<div class = "email">test32543@naver.com</div>
-					<div class = "bday">97.06.11</div>
-					<div class = "address">대구 수성구 범어천로27</div>
-					<div class = "date">2021.04.20</div>
+					<div class = "popup-name"><a href="../bbs/notice_list.html">공지사항</a></div>
+					<div class = "period">2021.04.22 ~ 2021.04.30</div>
+					<div class = "use">사용</div>
+					<div class = "date">2021.04.21</div>
 					<div class = "setting">
-						<a href="./member_form.html">수정</a>
+						<a href="./popup_form.html">수정</a>
+						<a href="#none">삭제</a>
+					</div>
+				</li>
+				<li>
+					<div class = "no">1</div>
+					<div class = "popup-name"><a href="../bbs/notice_list.html">공지사항</a></div>
+					<div class = "period">2021.04.22 ~ 2021.04.30</div>
+					<div class = "use">사용</div>
+					<div class = "date">2021.04.21</div>
+					<div class = "setting">
+						<a href="./popup_form.html">수정</a>
 						<a href="#none">삭제</a>
 					</div>
 				</li>
@@ -131,7 +123,7 @@
 		</div>
 
 		<div class="bbs-btn-box">
-			<a href="./member_form.html">회원 등록</a>
+			<a href="../adm/popup_form.html">팝업 등록</a>
 		</div>
 	</div>
 </div>

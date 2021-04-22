@@ -459,3 +459,100 @@ img {
 .member-list .name a:hover{color: #26649e; text-decoration: underline;}
 .member-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
 .member-list .setting a:hover{background: #000; color: #fff;}
+
+/* 멤버등록 member_form.html */
+.adm-set {padding: 50px;}
+.adm-set .join-form label{display: block;}
+.adm-set h1{text-align: center;}
+
+.adm-set .join-form {max-width:400px; margin: 0 auto; background: #fff; border: 1px solid #ccc;		border-radius: 25px; padding: 20px; margin-top: 30px;}
+.adm-set .join-form input[type="text"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+.adm-set .join-form input[type="password"]{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+.adm-set .join-form ul li {margin-bottom: 10px;}
+.adm-set .join-form ul li label{font-size: 12px; color: #000; margin-bottom:3px;}
+.adm-set .join-form ul li.gender span{display: inline-block;}
+.adm-set .join-form ul li.gender span label{display: inline-block;}
+
+.adm-set .join-form select{width:100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+
+.adm-set .join-form ul li.address span.zipcode input{width:100px;}
+.adm-set .join-form ul li.address span.zipcode button{width:100px; height:40px; background: #888; color: #fff; border: 0;}
+.adm-set .join-form ul li.address span {display:block; margin-bottom:5px;}
+
+.adm-set .join-btn{text-align: center;}
+.adm-set .join-btn a{display: inline-block; background: #26649e; color:#fff; margin:5px; padding: 10px 0px; width:100px; margin-top: 30px; border-radius: 25px; transition: all 0.5s;}
+.adm-set .join-btn a:hover{background: #000;}
+
+/* 팝업관리 popup.html */
+.popup-list{background: #fff; margin-top: 10px;}
+.popup-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.popup-list ul.table-bd{text-align: center;}
+.popup-list ul li{display: table; width: 100%;}
+.popup-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.popup-list ul li > div.no{width:5%}
+.popup-list ul li > div.popup-name{width:50%;}
+.popup-list ul li > div.perioud{width: 15%;}
+.popup-list ul li > div.use{width:10%;}
+.popup-list ul li > div.date{width:10%;}
+.popup-list ul li > div.setting{width:10%;}
+
+.popup-list .popup-name a:hover{color: #26649e; text-decoration: underline;}
+.popup-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
+.popup-list .setting a:hover{background: #000; color: #fff;}
+
+/* 팝업등록 popup_form.html */
+.popup-form{border: 1px solid #000; background: #fff; max-width:1200px;  padding: 10px; margin: 20px auto; }
+.popup-form ul{text-align: left; padding: 30px 10px;}
+.popup-form ul li{padding: 10px;}
+.popup-form ul li label{display:inline-block; vertical-align: top; width: 150px;}
+.popup-form input[type="text"]{width: 30%;}
+.popup-form li.select label[for="check-notice"]{margin-left: 10px;}
+
+/* 배너 banner.html */
+.banner-list{background: #fff; margin-top: 10px;}
+.banner-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.banner-list ul.table-bd{text-align: center;}
+.banner-list ul li{display: table; width: 100%;}
+.banner-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.banner-list ul li > div.no{width:5%}
+.banner-list ul li > div.up-down{width:10%;}
+.banner-list ul li > div.name{width: 25%;}
+.banner-list ul li > div.period{width:25%;}
+.banner-list ul li > div.use{width:10%;}
+.banner-list ul li > div.date{width:10%;}
+.banner-list ul li > div.setting{width:15%;}
+
+.banner-list .name a:hover{color: #26649e; text-decoration: underline;}
+.banner-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
+.banner-list .setting a:hover{background: #000; color: #fff;}
+
+/* 배너 banner_form.html */
+.banner-form{border: 1px solid #000; background: #fff; max-width:1200px;  padding: 10px; margin: 20px auto; }
+.banner-form ul{text-align: left; padding: 30px 10px;}
+.banner-form ul li{padding: 10px;}
+.banner-form ul li label{display:inline-block; vertical-align: top; width: 150px;}
+.banner-form input[type="text"]{width: 30%;}
+.banner-form li.select label[for="check-notice"]{margin-left: 10px;}
+
+/* 장소관리 booking.html */
+.booking-list{background: #fff; margin-top: 10px;}
+.booking-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.booking-list ul.table-bd{text-align: center;}
+.booking-list ul li{display: table; width: 100%;}
+.booking-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.booking-list ul li > div.no{width:5%}
+.booking-list ul li > div.img{width:15%;}
+.booking-list ul li > div.name{width: 15%;}
+.booking-list ul li > div.date{width:15%;}
+.booking-list ul li > div.setting{width:15%;}
+
+.booking-list .name a:hover{color: #26649e; text-decoration: underline;}
+.booking-list .setting a{border: 1px solid #000; padding: 5px; margin: 5px;}
+.booking-list .setting a:hover{background: #000; color: #fff;}
+
+/* 팝업 화면 index.html */
+.popup-box{border: 2px solid #000; position: absolute; z-index:9999; left:50%;}
+.popup-box img{max-width:500px; min-width:500px;}
+.popup-box .pop-btn {text-align:right; background: #fff;}
+.popup-box .pop-btn a{display:inline-block; background: #000; color: #fff; padding: 5px;}

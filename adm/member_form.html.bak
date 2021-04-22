@@ -109,7 +109,7 @@
          </ul>
       </div>
       <div class="join-btn">
-         <a href="./member.html">이전</a>
+         <a href="#none">이전</a>
          <a href="#none">가입완료</a>
       </div>
    </div>

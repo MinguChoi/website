@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>게시판 생성</title>
+  <title>장소 등록</title>
 
   <script scr="../js/jquery-1.12.4.min.js"></script>
   <script scr="../js/jquery-ui.min.js"></script>
@@ -41,11 +41,11 @@
  <div class="adm-menu">
 	<ul>
 		<li><a href="./set.html">환경설정</a></li>
-		<li class="on"><a href="./board.html">게시판 관리</a></li>
+		<li><a href="./board.html">게시판 관리</a></li>
 		<li><a href="./member.html">회원 관리</a></li>
 		<li><a href="./popup.html">팝업 관리</a></li>
 		<li><a href="./banner.html">배너 관리</a></li>
-		<li><a href="./booking.html">장소 관리</a></li>
+		<li class="on"><a href="./booking.html">장소 관리</a></li>
 	</ul>
 </div>
 
@@ -54,20 +54,29 @@
 <div class = "contents">
 <div class = "notice-wrap">
 	<div class = "notice-box">
-		<h1>게시판 생성</h1>
+		<h1>장소 등록</h1>
 
 		<div class="board-write-form">
 			<ul>
 				<li>
-					<label for="">게시판 명</label>
+					<label for="">장소명</label>
 					<input type="text">
 				</li>
 				<li>
-					<label for="">게시판 타입</label>
-					<select name="" id="">
-					  <option value="">일반</option>
-					  <option value="">갤러리</option>
-					</select>
+					<label for="">사진 #01</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">사진 #02</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">사진 #03</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">상세설명</label>
+					<textarea name="" id=""></textarea>
 				</li>
 				<li class="select">
 					<label for="">사용여부</label>
@@ -77,7 +86,7 @@
 		</div>
 
 		<div class="bbs-btn-box">
-			<a href="./banner.html">이전</a>
+			<a href="./booking.html">이전</a>
 			<a href="#none">저장</a>
 		</div>
 

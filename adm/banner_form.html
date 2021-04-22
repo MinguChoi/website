@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>게시판 생성</title>
+  <title>배너 등록</title>
 
   <script scr="../js/jquery-1.12.4.min.js"></script>
   <script scr="../js/jquery-ui.min.js"></script>
@@ -41,10 +41,10 @@
  <div class="adm-menu">
 	<ul>
 		<li><a href="./set.html">환경설정</a></li>
-		<li class="on"><a href="./board.html">게시판 관리</a></li>
+		<li><a href="./board.html">게시판 관리</a></li>
 		<li><a href="./member.html">회원 관리</a></li>
 		<li><a href="./popup.html">팝업 관리</a></li>
-		<li><a href="./banner.html">배너 관리</a></li>
+		<li class="on"><a href="./banner.html">배너 관리</a></li>
 		<li><a href="./booking.html">장소 관리</a></li>
 	</ul>
 </div>
@@ -54,19 +54,27 @@
 <div class = "contents">
 <div class = "notice-wrap">
 	<div class = "notice-box">
-		<h1>게시판 생성</h1>
+		<h1>배너 등록</h1>
 
-		<div class="board-write-form">
+		<div class="banner-form">
 			<ul>
 				<li>
-					<label for="">게시판 명</label>
+					<label for="">배너명</label>
 					<input type="text">
 				</li>
 				<li>
-					<label for="">게시판 타입</label>
+					<label for="">첨부파일</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">사용기간</label>
+					<input type="text" placeholder="시작일"> ~ <input type="text" placeholder="종료일">
+				</li>
+				<li>
+					<label for="">위치</label>
 					<select name="" id="">
-					  <option value="">일반</option>
-					  <option value="">갤러리</option>
+					  <option value="">상단</option>
+					  <option value="">하단</option>
 					</select>
 				</li>
 				<li class="select">
