@@ -1,5 +1,4 @@
 
-
 .header{background: #000; overflow: hidden;}
 
 .header .logo h1 {
@@ -46,8 +45,8 @@
 .m-menu a.active span:nth-child(3){
 	transform: rotate(-315deg) translateY(-6px) translateX(-4px);
 }
-.menu {height:0px; transition: all 0.3s;}
-.menu.active{height:auto;}
+.menu {height:0px; transition: all 0.3s; display: none;}
+.menu.active{height:auto; display: inline-block;}
 .menu.active div > ul > li a{border-bottom:1px solid #ccc;}
 
 .menu > div > ul > li > ul.submenu {
@@ -58,14 +57,14 @@
     width: 100%;
 }
 .menu > div > ul > li > ul.submenu li {
-	
+	border-bottom: none;
 }
 .menu > div > ul > li > ul.submenu li a {
 	border-bottom: none;
 	font-size: 12px;
 }
 
-/* bbs-box */
+/* 메인화면 bbs-box */
 .bbs-box > div > .board-box {
     float: none;
     width: auto;
@@ -73,4 +72,18 @@
 .bbs-box > div > .right-banner {
     float: none;
     width: auto;
+}
+
+/* 공지사항 notice_list.html*/
+.search-box button {
+    padding: 0px 10px;
+}
+.search-box input {
+    width: 35%;
+}
+.search-box {
+    padding: 20px 5px;
+}
+.notice-table ul.table-hd {
+    display: none;
 }

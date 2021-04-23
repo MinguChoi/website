@@ -12,6 +12,7 @@
   <title>공지사항</title>
   <script scr="../js/jquery-1.12.4.min.js"></script>
   <script scr="../js/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
   <script src="../js/swiper.min.js"></script>
   <link rel="stylesheet" href="../js/swiper.min.css">
@@ -47,6 +48,29 @@
 		</div>
 	</div>
  </div>
+
+
+<!-- 모바일 메뉴 -->
+<div class="m-menu-bar">
+<div class="m-menu">
+	<div>
+		<a href="#none">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</div>
+</div>
+<script>
+	$('.m-menu a').click( 
+		function(){
+			$(this).toggleClass('active');
+			$('.menu').toggleClass('active');
+		}
+	)
+</script>
 
  <!-- 메뉴 -->
  <div class="menu">
