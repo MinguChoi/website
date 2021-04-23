@@ -15,6 +15,10 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
   <script src="../js/swiper.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../js/swiper.min.css">
   <!-- css 호출 부분 -->
   <link rel="stylesheet" href="../css/style.css">
@@ -111,7 +115,7 @@
 		<div class = "gallery-table">
 			
 			<ul class = "table-bd">
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r01.jpg" alt=""></a>
 					</div>
@@ -120,7 +124,7 @@
 						<span>2021.04.20</span>
 					</div>
 				</li>
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r02.jpg" alt=""></a>
 					</div>
@@ -129,7 +133,7 @@
 						<span>2021.04.20</span>
 					</div>
 				</li>
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r03.jpg" alt=""></a>
 					</div>
@@ -138,7 +142,7 @@
 						<span>2021.04.20</span>
 					</div>
 				</li>
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r04.jpg" alt=""></a>
 					</div>
@@ -147,7 +151,7 @@
 						<span>2021.04.20</span>
 					</div>
 				</li>
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r05.jpg" alt=""></a>
 					</div>
@@ -156,7 +160,7 @@
 						<span>2021.04.20</span>
 					</div>
 				</li>
-				<li>
+				<li data-aos="fade-up">
 					<div class="thum">
 						<a href="./gallery_view.html"><img src="../img/r06.jpg" alt=""></a>
 					</div>
@@ -206,6 +210,11 @@
 		<span>copyright(c) Hustar. All rights reserved.</span>
 	</div>
  </div>
+
+
+<script>
+	AOS.init();
+</script>
 
  </body>
  </html>
