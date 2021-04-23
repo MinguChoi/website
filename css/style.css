@@ -372,7 +372,7 @@ img {
 .mypage-list{background: #fff; margin-top: 10px;}
 .mypage-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
 .mypage-list ul.table-bd{text-align: center;}
-.mypage-list ul.table-bd .location{text-align: left;}
+.mypage-list ul.table-bd .location{text-align: left; font-size: 12px; font-weight: bold;}
 .mypage-list ul li{display: table; width: 100%;}
 .mypage-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
 .mypage-list ul li > div.no{width:10%}

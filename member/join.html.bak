@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="Generator" content="EditPlus  ">
-   <meta name="Author" content="">
-   <meta name="Keywords" content="">
-   <meta name="Description" content="">
-   <title>회원가입</title>
-   <script scr="../js/jquery-1.12.4.min.js"></script>
-   <script scr="../js/jquery-ui.min.js"></script>
-   <script src="../js/swiper.min.js"></script>
-   <link rel="stylesheet" href="../js/swiper.min.css">
-   <!-- css 호출 부분 -->
-   <link rel="stylesheet" href="../css/style.css">
-</head>
+
 <body>
     <!-- 상단 헤더(로고, 로그인, 회원가입) -->
     <div class="header">

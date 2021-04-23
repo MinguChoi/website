@@ -154,7 +154,7 @@
 
 /* 갤러리 리스트 */
 .gallery-table > ul > li {
-    width: 50%;
+    width: 33.3%;
 }
 .gallery-table .thum {
     padding-bottom: 100%;

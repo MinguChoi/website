@@ -154,7 +154,7 @@
 
 /* 갤러리 리스트 */
 .gallery-table > ul > li {
-    width: 50%;
+    width: 25%;
 }
 .gallery-table .thum {
     padding-bottom: 100%;
@@ -204,39 +204,14 @@
 }
 
 /* 마이페이지 */
-.mypage-list {
-    background: none;
-	margin: 0px;
-}
-.mypage-list ul.table-hd {
-    display: none;
-}
-.mypage-list ul li {
-    display: block;
-    border: 1px solid #ccc;
-	margin-bottom: 10px;
-	background: #fff;
-	overflow: hidden;
-}
-.mypage-list ul li > div {
-    display: block;
-	border-bottom: none;
-	float: left;
-}
-.mypage-list ul li > div.no {
-	width: 15%;
-}
-.mypage-list ul li > div.location {
-	width: 85%;
-}
-.mypage-list ul li > div.status {
-    width: 15%;
-}
-.mypage-list ul li > div.reservation-date {
-    width: auto;
-}
-.mypage-list ul li > div.reservation-date:before {content: "예약일 : "; color: #888;}
-.mypage-list ul li > div.transaction-date {
-    width: auto;
-}
-.mypage-list ul li > div.transaction-date:before {content: "등록일 : "; color: #888;}
+.mypage-list{background: #fff; margin-top: 10px;}
+.mypage-list ul.table-hd{text-align: center; border-top: 2px solid #000;}
+.mypage-list ul.table-bd{text-align: center;}
+.mypage-list ul.table-bd .location{text-align: left; font-size: 12px; font-weight: bold;}
+.mypage-list ul li{display: table; width: 100%;}
+.mypage-list ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px}
+.mypage-list ul li > div.no{width:10%}
+.mypage-list ul li > div.location{width:50%}
+.mypage-list ul li > div.status{width:15%; }
+.mypage-list ul li > div.reservation-date{width:15%;}
+.mypage-list ul li > div.transaction-date{width:15%;}
