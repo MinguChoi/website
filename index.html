@@ -17,6 +17,9 @@
 
   <script src="./js/swiper.min.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="./js/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- 모바일 -->
@@ -169,7 +172,7 @@
  <div class="bbs-box">
 
 	<div>
-		<div class = "board-box">
+		<div class = "board-box" data-aos="fade-up">
 			<div class = "tab-menu">
 				<ul>
 					<li class = "on"><a href="#none">공지사항</a></li>
@@ -189,7 +192,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class = "right-banner">
+		<div class = "right-banner" data-aos="fade-up">
 			<!-- Swiper -->
 			<div class="swiper-container r-slide">
 
@@ -246,6 +249,12 @@
 		<span>copyright(c) Hustar. All rights reserved.</span>
 	</div>
  </div>
+
+
+<script>
+  AOS.init();
+</script>
+
 
  </body>
 </html>
