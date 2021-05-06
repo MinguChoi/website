@@ -1,0 +1,340 @@
+//* 초기화 */
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em; font-family:'Noto Sans KR', 'Malgun Gothic', dotum, sans-serif; background:#2b213a;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:17px; font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+ul, dl,dt,dd {margin:0;padding:0;list-style:none}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+label, input, button, select, img {vertical-align:middle;font-size:1em}
+input, button {margin:0;padding:0; font-family:'Noto Sans KR', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+input[type="submit"]{cursor:pointer}
+button {cursor:pointer}
+
+textarea, select {font-family:'Noto Sans KR', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {color:#000;text-decoration:none}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+/* 헤더 */
+
+.header{transition: all 0.3s;}
+.header.fixed{position: fixed; width: 100%; z-index: 9999; background: #fff;}
+
+.header, .contents, .footer{padding: 10px;}
+	
+.header{background: #fff; border-bottom: 1px solid #ccc;}
+.header .header-box{overflow: hidden; padding: 10px;}
+.header h1{float: left;}
+.header h1 a{display: block; padding: 10px;}
+.header h1 a img{max-width:60px; max-height:60px;}
+
+.header .gnb{width:600px; margin: 15px auto;}
+.header .gnb > ul{overflow:hidden; margin-top: 8px;}
+.header .gnb > ul > li{float: left; margin:0 20px;}
+.header .gnb > ul > li > a{display: block; padding: 10px; text-align: center; font-size: 18px; font-weight: 600;}
+.header .gnb > ul > li > a:hover{color: #7db7f7;}
+
+.header .tnb{float: right; margin-top: 15px;}
+.header .tnb > ul > li{float: right;}
+.header .tnb > ul > li > a{display: block; padding: 10px; font-size: 15px; font-weight: 600;}
+.header .tnb > ul > li > a:hover{color: #7db7f7;}
+
+
+/* 소개 about */
+
+.about-wrap{max-width: 1200px; margin: 50px auto;}
+.about{position: relative; padding: 30px;}
+.about .img
+{
+	display: inline-block;
+	text-align: center; 
+	width: 30%;
+	height: 300px; 
+	background: url('../img/profile-img.jpg'); 
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.about .profile{display: inline-block; width: 69%; position:absolute; top: 120px;}
+.about-wrap h2{text-align: center; font-size: 50px; padding: 10px; color: #fff; text-decoration:underline;}
+.about ul li{overflow: hidden; display: inline-block; width: 49%;}
+.about ul li span{display:inline-block; font-size:30px; color: #fff; padding: 10px; width: 50px; margin-left: 50px;}
+.about ul li p{display:inline-block; font-size:20px; color: #fff; padding: 10px;}
+
+
+/* 메인 비주얼 */
+
+.main-visual{
+	text-align: center; 
+	height: 400px; 
+	background: url('../img/bg.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.main-visual h2{font-size: 25px; padding-top: 300px; color: #fff;}
+.main-visual p{font-size: 16px; color: #fff; padding: 10px;}
+
+/* 이력서 */
+.education{margin-top: 60px;}
+.education > div {text-align: center; padding: 10px; background: #fff; margin: 30px 10px;}
+.education > div.bdt{background: none; border-top: 4px dashed #ccc; padding: 30px 0;}
+.education > div.bdt > div{background: #fff;}
+.education div h3{font-size: 30px; padding: 5px;}
+
+.education div ul li span{font-size: 20px; padding:5px;}
+
+.education > div.bdt > div > h3{text-align: center; font-size: 30px; padding: 10px; color: #888}
+/*.education > div.bdt > div p.line-1 .anim-typewriter{display:block; text-align: center; font-size: 20px; padding: 5px;}*/
+
+.line-1{
+position: relative;
+top: 50%;  
+width: 50em;
+margin: 0 auto;
+border-right: 2px solid rgba(255,255,255,.75);
+font-size: 180%;
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+transform: translateY(-50%);
+margin-top: 10px;
+}
+.anim-typewriter{
+  animation: typewriter 6s steps(44) 1s 1 normal both,
+			 blinkTextCursor 500ms steps(44) infinite normal;
+  /*animation-iteration-count: infinite;*/
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 50em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.resume-wrap{max-width: 1200px; margin: 50px auto;}
+.resume h2{text-align: center; font-size: 50px; padding: 10px; color: #fff; text-decoration:underline;}
+.resume > div{padding: 20px; margin-top: 20px;}
+.resume > div > p{text-align: center; font-size: 30px; padding: 10px; color: #ccc}
+
+.resume .skills ul li {
+	display: inline-block;
+	width: 24.7%;
+	text-align: center;
+	padding: 20px;
+	margin-top: 20px;
+	background: #fff;
+}
+.ldBar {
+	position: relative;
+	display: inline-block;
+}
+.ldBar.label-center > .ldBar-label {display: none;}
+.resume .skills ul li p{font-size: 50px;}
+.resume .skills ul li span{display: block; font-size: 20px;}
+.resume .skills ul li span.good{color: #1000ff;}
+.resume .skills ul li span.ok{color: #509fcd;}
+.resume .skills ul li span.not-bad{color: #348f06;}
+
+/* 배너 */
+.slide-banner{padding: 40px; display:none;}
+.slide-banner .swiper-container{max-width: 1200px; margin: 0 auto;}
+
+
+/* 메인 - 포트폴리오 */
+
+.portfolio-wrap{background: #979797fc;}
+.portfolio-wrap h2{text-align: center; font-size: 50px; padding: 40px; color: #fff; text-decoration:underline;}
+.portfolio{padding: 10px;}
+.portfolio ul{overflow: hidden; max-width: 1200px; margin: 30px auto; padding: 20px;}
+.portfolio li{float: left; width: 33.33%; padding: 10px;}
+.portfolio li > div{background: #fff;}
+.portfolio li > div .thum{text-align: center;}
+.portfolio li > div .thum img{max-height:185px;}
+.portfolio li > div .info{text-align: center; padding: 5px;}
+.portfolio li > div .info h3{}
+.portfolio li > div .info p{color: #888; margin: 10px 0;}
+.portfolio li > div .info span{display: inline-block; width: 35px; height: 35px; border: 1px solid #ccc; border-radius: 50%; line-height: 40px;}
+.portfolio li > div .info span{transition: all 0.3s;}
+.portfolio li > div .info span:hover{width: 100px; border-radius: 25px; background: #258ebf; color: #fff; border: 0;}
+.portfolio li > div .info span i{font-size: 25px;}
+
+
+/* Footer 하단정보 */
+.footer{background: #000;}
+.footer > div{padding: 10px; overflow: hidden; margin: 0 20px;}
+.footer > div > div{float: left;}
+.footer > div > div.f-logo h1 a img{max-width: 60px; max-height: 60px; filter: brightness(0) invert(1);}
+.footer > div > div.f-copy{padding: 10px; margin: 8px 20px;}
+.footer > div > div.f-copy p{color: #fff;}
+
+/* 공지사항 */
+.sub-wrap{text-align: center; margin: 20px 0;}
+.sub-wrap > div{max-width: 1200px; margin: 0 auto; background: #5b4f6c;}
+.sub-wrap ul{display: table; width:100%}
+.sub-wrap li{display: table-cell; width: 33.33%;}
+
+.sub-wrap li.on span:before{width:100%; left: 0;}
+.sub-wrap li.on span:after{opacity: 1;}
+.sub-wrap li.on a{font-weight: bold;}
+
+.sub-wrap li:hover span:before{width:100%; left: 0;}
+.sub-wrap li:hover span:after{opacity: 1;}
+.sub-wrap li > a{display: block; padding: 20px; font-size:14px; border-right: 1px solid #e1e1e1;}
+.sub-wrap li > a span{color: #fff; display: block; position: relative;}
+.sub-wrap li > a span:before
+{
+	content: ""; 
+	width: 0; 
+	height: 3px;
+	background: #fff; 
+	position: absolute; 
+	left: 0;
+	bottom: -10px;
+	transition: all 0.3s;
+}
+.sub-wrap li > a span:after
+{
+	opacity: 0;
+	content: ""; 
+	width: 0; 
+	height: 0; 
+	border-top: 0 solid transparent; 
+	border-bottom: 5px solid #fff; 
+	border-left: 5px solid transparent; 
+	border-right: 5px solid transparent; 
+	position: absolute; left: 50%; 
+	transform: translateX(-50%);
+	bottom: -7px;
+}
+
+.notice-wrap{max-width:1200px; margin: 50px auto;}
+.notice-wrap h1{text-align: center; font-size: 20px; color: #fff; text-decoration: underline; padding: 10px; margin:20px;}
+.notice-wrap .search-box{text-align: right; margin: 20px 0;}
+.notice-wrap input{width: 200px; height: 30px;}
+.notice-wrap button{width: 45px; height: 30px; border-radius: 45px; background: #fff; border: none; transition: all 0.3s;}
+.notice-wrap button:hover {
+  background-color: #bebff3;
+  box-shadow: 0px 6px 8px rgba(190,191,243, 0.8);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.notice-box{background: #fff;}
+.notice-box .table-hd{border-bottom: 2px solid #000; font-weight: 600;}
+.notice-box .table-bd li{border-bottom: 1px solid #ccc;}
+.notice-box ul li{display: table; width:100%; font-size: 17px; padding:10px;}
+.notice-box ul li div{padding: 5px;}
+.notice-box ul li div{display: table-cell; text-align: center;}
+.notice-box ul li div.no{width: 15%;}
+.notice-box ul li div.subject{width: 45%;}
+.notice-box .table-bd li div.subject{text-align:left;}
+.notice-box .table-bd li div.subject:hover a{color: #7db7f7;}
+.notice-box ul li div.writer{width:20%;}
+.notice-box ul li div.date{width:20%;}
+
+.paging{text-align:center; margin: 20px 0; padding: 10px;}
+.paging ul li{display:inline-block;}
+.paging ul li a{background: #fff; border: 1px solid #ccc; display: block; padding: 5px 10px;}
+.paging ul li.on a{background: #bebff3; color: #fff; border: 1px solid #000;}
+
+/* 갤러리 */
+.gallery-wrap{max-width: 1200px; margin: 0 auto;}
+.gallery-wrap h1
+{
+	text-align: center;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 20px;
+	padding: 30px;
+}
+.gallery{margin-top: 30px;}
+.gallery-wrap h2{text-align: center; font-size: 16px;  color: #ccc;}
+.gallery > ul > li{display: inline-block; width: 33%; padding: 30px;}
+.gallery .image{text-align: center;}
+.gallery .image a img{max-width: 300px; max-height: 300px; min-width: 300px; min-height: 300px; overflow: hidden;}
+.gallery .info{border-bottom: 2px double #fff;}
+.gallery .info a{display: block; padding: 20px; color: #fff; font-size: 16px; text-align: left;}
+.gallery .info p{max-height: 120px; min-height: 120px; overflow-y:auto; padding: 0px 20px; color: #ccc; font-size: 14px; text-align: left;}
+.gallery .info p::-webkit-scrollbar{
+	width: 8px;
+	background-color: #2b213a;
+}
+.gallery .info p::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #2b213a;
+}
+.gallery .info p::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ccc;
+}
+.gallery .info span{display: block; padding: 10px 20px; color: #ccc; font-size: 12px; text-align: left; margin-bottom: 10px; }
+
+.gallery .gallery-paging{margin: 30px 20px; display: none;}
+.gallery .gallery-paging ul li{display: inline-block;}
+.gallery .gallery-paging ul li a{background: #fff; border: 1px solid #ccc; display: block; padding: 5px 10px;}
+.gallery .gallery-paging ul li.on a{background: #bebff3; color: #fff; border: 1px solid #000;}
+
+/* 포트폴리오 */
+.gallery .image-toharu{
+	display: inline-block;
+	text-align: center; 
+	width: 350px;
+	height: 300px;
+	background: url('../img/s-00.png');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.gallery .image-qrecipe{
+	display: inline-block;
+	text-align: center; 
+	width: 350px;
+	height: 300px;
+	background: url('../img/mobile-thumb2.png');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.gallery .image-portfolio{
+	display: inline-block;
+	text-align: center; 
+	width: 350px;
+	height: 300px;
+	background: url('../img/web-thumb1.png');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.gallery .image-smartbucket{
+	display: inline-block;
+	text-align: center; 
+	width: 350px;
+	height: 300px;
+	background: url('../img/s-04.png');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

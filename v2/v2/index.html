@@ -1,0 +1,243 @@
+
+ <!-- 헤더 인클루드 -->
+ <?php include('./header.php'); ?>
+
+ <!-- contents 시작 -->
+ <body>
+ <!-- 내용 출력 -->
+ <div class="contents">
+
+	<!-- 메인 비주얼 -->
+	<div class="main-visual">
+		<h2 data-aos="fade-up" data-aos-delay="100">안녕하세요👋</h2>
+		<p data-aos="fade-up" data-aos-delay="300">
+			도전하는, 책임감있는, 소통하는 개발자 최민구 입니다! 
+		</p>
+	</div>
+
+	<!-- 소개 -->
+	<div class="about-wrap">
+		<h2>Profile</h2>
+		<div class="about">
+			<div class="img">
+				
+			</div>
+			<div class="profile">
+				<ul>
+					<li>
+						<span class="bday"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+						<p>1993.06.29</p>
+					</li>
+					<li>
+						<span class="mobile"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<p>010-7229-6204</p>
+					</li>
+					<li>
+						<span class="email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<p>mingu0629@gmail.com</p>
+					</li>
+					<li>
+						<span class="github"><i class="fa fa-github-square" aria-hidden="true"></i></span>
+						<p>github.com/MinguChoi</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 이력서 -->
+	<div class="resume-wrap">
+		
+		<div class="resume">
+			<div data-aos="flip-left" data-aos-delay="500">
+				<h2>SKILLS</h2>
+				<p>
+					+ HTML, CSS, JAVASCRIPT / GCP, Firebase / Github
+				</p>
+			</div>
+			<div class="skills">
+				<ul>
+					<li data-aos="flip-left" data-aos-delay="500">
+						<p>JAVA</p>
+						<div data-preset="stripe" 
+							class="ldBar label-center" 
+							data-value="85">
+						</div>
+						<span class="good">85%</span>
+					</li>
+					<li data-aos="flip-left" data-aos-delay="700">
+						<p>C++</p>
+						<div data-preset="stripe" class="ldBar label-center" data-value="80"></div>
+						<span class="ok">80%</span>
+					</li>
+					<li data-aos="flip-left" data-aos-delay="900">
+						<p>PYTHON</p>
+						<div data-preset="stripe" class="ldBar label-center" data-value="75"></div>
+						<span class="not-bad">75%</span>
+					</li>
+					<li data-aos="flip-left" data-aos-delay="1200">
+						<p>SWIFT</p>
+						<div data-preset="stripe" class="ldBar label-center" data-value="75"></div>
+						<span class="not-bad">75%</span>
+					</li>
+				</ul>
+			</div>
+			<div class="education">
+				<h2 data-aos="fade-up">EDUCATION</h2>
+				<div data-aos="fade-up">
+					<h3>LaGuardia CC, CUNY(City University of New York)</h3>
+					<ul>
+						<li>
+							<span>2017.01 - 2019.01 graduated with A.S. in Computer Science</br>
+							3.8 / 4.0 GPA</span>
+						</li>
+					</ul>
+				</div>
+				<div data-aos="fade-up">
+					<h3>Hunter College , CUNY(City University of New York)</h3>
+					<ul>
+						<li>
+							<span>2019.01 - 2021.01 graduated with B.A. in Computer Science</br>
+							3.4 / 4.0 GPA</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bdt" data-aos="fade-up">
+					<div>
+						<h3>Coursework</h3>
+						<p class="line-1 anim-typewriter">Data Structures, Operating Systems, iOS Development, Cloud Computing, Big Data</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+
+ <!-- 배너 -->
+ <div class="slide-banner" data-aos="fade-up">
+	<!-- Swiper -->
+	<div class="swiper-container">
+
+		<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="./img/s-00.png"></div>
+		  <div class="swiper-slide"><img src="./img/s-01.png"></div>
+		  <div class="swiper-slide"><img src="./img/s-03.png"></div>
+		  <div class="swiper-slide"><img src="./img/s-04.png"></div>
+		</div>
+
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+
+	</div>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		  autoHeight: true,
+		  loop: true,
+		  autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		  pagination: {
+			el: '.swiper-pagination',
+		  },
+		});
+	</script>
+ </div>
+
+ <div class="portfolio-wrap">
+	<div class="portfolio-box">
+		<h2>PORTFOLIO</h2>
+		<div class="portfolio">
+			<ul>
+				<li data-aos="fade-up" data-aos-delay="300">
+					<div>
+						<div class="thum">
+							<a href="./bbs/portfolio_view.html"><img src="./img/s-03.png" alt=""></a>
+						</div>
+						<div class="info">
+							<a href="//github.com/MinguChoi/SmartBucket">
+								<h3>스마트 버켓</h3>
+								<p>AI - Vision</p>
+								<span><i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-aos="fade-up" data-aos-delay="500">
+					<div>
+						<div class="thum">
+							<a href="./bbs/portfolio_view.html"><img src="./img/s-00.png" alt=""></a>
+						</div>
+						<div class="info">
+							<a href="//github.com/MinguChoi/ToHaru">
+								<h3>하루에게</h3>
+								<p>Android - Java</p>
+								<span><i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-aos="fade-up" data-aos-delay="700">
+					<div>
+						<div class="thum">
+							<a href="./bbs/portfolio_view.html"><img src="./img/mobile-thumb2.png" alt=""></a>
+						</div>
+						<div class="info">
+							<a href="//github.com/MinguChoi/QRecipes">
+								<h3>QRecipe</h3>
+								<p>iOS - Swift</p>
+								<span><i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-aos="fade-up" data-aos-delay="300">
+					<div>
+						<div class="thum">
+							<a href="#none"><img src="./img/r01.jpg" alt=""></a>
+						</div>
+						<div class="info">
+							<a href="#none">
+								<h3>게시물 제목</h3>
+								<p>게시물 내용 출력</p>
+								<span><i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-aos="fade-up" data-aos-delay="500">
+					<div>
+						<div class="thum">
+							<a href="#none"><img src="./img/r02.jpg" alt=""></a>
+						</div>
+						<div class="info">
+							<a href="#none">
+								<h3>게시물 제목</h3>
+								<p>게시물 내용 출력</p>
+								<span><i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+ </div>
+
+ <!-- contents 끝 -->
+
+<!-- 헤더 인클루드 -->
+<?php include('./footer.php'); ?>
+
+ </body>
+</html>
